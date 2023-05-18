@@ -1,0 +1,6 @@
+CREATE TABLE "Books" (
+ "id"	INTEGER NOT NULL UNIQUE PRIMARY KEY AUTOINCREMENT,
+ "title"	TEXT NOT NULL UNIQUE ,
+ "genre_code"	TEXT NOT NULL,
+ FOREIGN KEY("genre_code") REFERENCES "Genres"("code")
+);

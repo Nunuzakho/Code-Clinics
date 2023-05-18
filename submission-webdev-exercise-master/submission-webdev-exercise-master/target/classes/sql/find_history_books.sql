@@ -1,0 +1,1 @@
+SELECT count(*) FROM Books b, Genres g WHERE b.genre_code = g.code AND g.description = "History"
